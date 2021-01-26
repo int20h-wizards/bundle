@@ -9,4 +9,4 @@
 ## backend
 Для того, щоб запустити в роботу бекенд логіку, власне логіку самого парсера, треба відкрити папку `backend-only`, скачати заархівований файл. Вбудувати його в eclipse версії luna (допустимі також інше середовище розробки яке підтримує java й інша версія eclipse. але ми перевіряли саме в цьому) і запустити як java application.
 
-###Логiка Back-end розмiщена за такою алресою: https://github.com/int20h-wizards/backend-only/tree/master/backend-only-master/backend-only-master/CropScraping
+### Логiка Back-end розмiщена за такою алресою: https://github.com/int20h-wizards/backend-only/tree/master/backend-only-master/backend-only-master/CropScraping
