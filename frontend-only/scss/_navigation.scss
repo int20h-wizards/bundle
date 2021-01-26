@@ -1,0 +1,114 @@
+.navigation {
+	flex-basis: $navigation-width;
+
+	&__title {
+		display: none;
+
+		@media (max-width: $first-breackpoint) {
+			display: block;
+			color: #fff;
+			margin: $mobile-general-padding * 2 $mobile-general-padding $mobile-general-padding;
+			text-shadow: 0px 4px 4px rgba(13, 13, 13, 0.25);
+		}
+	}
+
+	&__ul {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		@media (max-width: $first-breackpoint) {
+			margin: 0 $mobile-general-padding $mobile-general-padding * 2;
+		}
+	}
+
+	&__wrapper {
+		margin: 1px 0;
+		width: calc(100% - #{$navigation-button-offset});
+		transition-duration: 0.3s;
+
+		&:hover {
+			width: 100%;
+		}
+
+		@media (max-width: $first-breackpoint) {
+			width: 100%;
+		}
+	}
+
+	&__button {
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		padding: 15px 0;
+		text-align: center;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 27px;
+		line-height: 32px;
+		color: var(--main-screen-color-primary);
+		background: rgba(255, 255, 255, 0.438);
+		border: 2px solid var(--main-screen-color-primary);
+		border-right-width: 0;
+		border-radius: 15px 0px 0px 15px;
+		cursor: pointer;
+		outline: none;
+		transition-duration: 0.3s;
+
+		&:hover, &:focus {
+			background-color: darken(rgba(255, 255, 255, 0.8), 15%);
+			padding-left: $navigation-button-offset;
+		}
+
+		&:active {
+			width: calc(100% - 5px);
+		}
+
+		@media (max-width: $first-breackpoint) {
+			border-radius: 20px;
+			border-width: 2px;
+			width: 100%;
+
+			&:hover, &:focus {
+				padding-left: 0;
+				letter-spacing: 0.7px;
+			}
+			&:active {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@mixin navigation-active-tab($category) {
+	&__wrapper--#{$category} {
+		width: 100%;
+	}
+	&__button--#{$category} {
+		background: #fff;
+
+		&:hover, &:focus {
+			padding-left: 0;
+			background: rgba(#fff, 0.9);
+		}
+	}
+}
+
+.body--wheat .navigation {
+	@include navigation-active-tab(wheat);
+}
+
+.body--buckwheat .navigation {
+	@include navigation-active-tab(buckwheat);
+}
+
+.body--rice .navigation {
+	@include navigation-active-tab(rice);
+}
+
+.body--barley .navigation {
+	@include navigation-active-tab(barley);
+}
+
+.body--corn .navigation {
+	@include navigation-active-tab(corn);
+}

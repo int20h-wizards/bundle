@@ -1,0 +1,23 @@
+.body {
+	// overflow-x: hidden;
+	&__resolution-restriction {
+		display: none;
+		
+		@media (max-height: 525px) and (orientation: landscape), (max-width: 319px) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 9999;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			text-align: center;
+			font-size: 18px;
+			color: #fff;
+			background: blue;
+		}
+	}
+}

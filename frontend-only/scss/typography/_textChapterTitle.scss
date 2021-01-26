@@ -1,0 +1,11 @@
+.textChapterTitle {
+	// margin: 55px 0 45px;
+	font-weight: 600;
+	font-size: 42px;
+	line-height: 50px;
+	color: #000;
+
+	@media (max-width: 768px) {
+		font-size: 26px;
+	}
+}

@@ -1,0 +1,98 @@
+.central {
+	--central-filled-button-color: #000;
+	padding: 43px;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0px 3px 16px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+
+	@media (max-width: $first-breackpoint) {
+		margin: 0 $mobile-general-padding;
+	}
+	@media (max-width: $media-mobile) {
+		padding: 30px 22px 22px;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 21px;
+		color: #444444;
+	}
+
+	&__grain-name {
+		display: none;
+	}
+
+	&__price {
+		margin-bottom: 30px;
+		color: var(--main-screen-color-primary);
+	}
+	&__digits-wrapper {
+		font-weight: bold;
+		font-size: 150px;
+		line-height: 177px;
+	}
+	&__digits {
+		display: none;
+	}
+	&__price-text {
+		display: block;
+		font-size: 31px;
+		line-height: 37px;
+	}
+
+	&__link-to-seller {
+		background-color: var(--central-filled-button-color);
+	}
+}
+
+.body--wheat .central {
+	--central-filled-button-color: #BD9161;
+	&__grain-name--wheat {
+		display: inline;
+	}
+	&__digits--wheat {
+		display: inline;
+	}
+}
+
+.body--buckwheat .central {
+	--central-filled-button-color: #A33F66;
+	&__grain-name--buckwheat {
+		display: inline;
+	}
+	&__digits--buckwheat {
+		display: inline;
+	}
+}
+
+.body--rice .central {
+	--central-filled-button-color: #BB9967;
+	&__grain-name--rice {
+		display: inline;
+	}
+	&__digits--rice {
+		display: inline;
+	}
+}
+
+.body--barley .central {
+	--central-filled-button-color: #733E08;;
+	&__grain-name--barley {
+		display: inline;
+	}
+	&__digits--barley {
+		display: inline;
+	}
+}
+
+.body--corn .central {
+	--central-filled-button-color: #B48011;;
+	&__grain-name--corn {
+		display: inline;
+	}
+	&__digits--corn {
+		display: inline;
+	}
+}

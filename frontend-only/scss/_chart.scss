@@ -1,0 +1,7 @@
+.chart {
+	padding: 30px 50px;
+
+	@media (max-width: $first-breackpoint) {
+		padding: 20px 15px;
+	}
+}

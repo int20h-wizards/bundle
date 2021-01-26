@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Крупне інфо</title>
+    <link rel="preload" href="./styles/critical.css" as="style">
+    <link rel="stylesheet" href="./styles/critical.css">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+</head>
+
+<body class="body body--buckwheat">
+    <div class="body__resolution-restriction">
+        Use Portrait mode or device with bigger screen, please
+    </div> 
+
+    <article class="main-screen-l">
+        <p class="main-screen-l__title">
+            <span class="main-screen-l__grain-name main-screen-l__grain-name--corn">Кукурудза</span>
+            <span class="main-screen-l__grain-name main-screen-l__grain-name--wheat">Пшениця</span>
+            <span class="main-screen-l__grain-name main-screen-l__grain-name--buckwheat">Гречка</span>
+            <span class="main-screen-l__grain-name main-screen-l__grain-name--rice">Рис</span>
+            <span class="main-screen-l__grain-name main-screen-l__grain-name--barley">Ячмінь</span>
+        </p>
+
+        <div class="main-screen-l__second-row">
+            <section class="central">
+                <h1 class="central__title">Ціна
+                    <span class="central__grain-name central__grain-name--wheat">найдешевшої пшениці</span>
+                    <span class="central__grain-name central__grain-name--buckwheat">найдешевшої гречки</span>
+                    <span class="central__grain-name central__grain-name--rice">найдешевшого рису</span>
+                    <span class="central__grain-name central__grain-name--barley">найдешевшого ячменю</span>
+                    <span class="central__grain-name central__grain-name--corn"> найдешевшої кукурудзи</span>
+                    в Україні
+                </h1>
+                <p class="central__price">
+                    <span class="central__digits-wrapper">
+                        <span class="central__digits central__digits--wheat">&nbsp;</span>
+                        <span class="central__digits central__digits--buckwheat">&nbsp;</span>
+                        <span class="central__digits central__digits--rice">&nbsp;</span>
+                        <span class="central__digits central__digits--barley">&nbsp;</span>
+                        <span class="central__digits central__digits--corn">&nbsp;</span>
+                    </span>
+                    <span class="central__price-text">грн / кг</span>
+                </p>
+                <a href="#" class="central__link-to-seller filled-button LOGIC-cheapest-product-link" target="_blank">
+                    <span class="filled-button__subwrapper">
+                        відкрити сайт продавця
+                    </span>
+                </a>
+            </section>
+
+            <nav class="navigation">
+                <h2 class="textChapterTitle navigation__title">
+                    Інші категорії
+                </h2>
+                <ul class="navigation__ul">
+                    <li class="navigation__wrapper navigation__wrapper--corn">
+                        <button class="navigation__button navigation__button--corn EVENT-change-category-button"
+                            data-target-category="corn">Кукурудза</button>
+                    </li>
+                    <li class="navigation__wrapper navigation__wrapper--buckwheat">
+                        <button class="navigation__button navigation__button--buckwheat EVENT-change-category-button"
+                            data-target-category="buckwheat">Гречка</button>
+                    </li>
+                    <li class="navigation__wrapper navigation__wrapper--rice">
+                        <button class="navigation__button navigation__button--rice EVENT-change-category-button"
+                            data-target-category="rice">Рис</button>
+                    </li>
+                    <li class="navigation__wrapper navigation__wrapper--barley">
+                        <button class="navigation__button navigation__button--barley EVENT-change-category-button"
+                            data-target-category="barley">Ячмінь</button>
+                    </li>
+                    <li class="navigation__wrapper navigation__wrapper--wheat">
+                        <button class="navigation__button navigation__button--wheat EVENT-change-category-button"
+                            data-target-category="wheat">Пшениця</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </article>
+    <!-- /.main-screen-l -->
+
+    <article class="another-prices-l restrictor1200">
+        <div class="another-prices-l__top-row">
+            <h2 class="textChapterTitle another-prices-l__title">
+                Інші товари
+            </h2>
+            <div class="another-prices-l__filters">
+                <label class="labeled-input another-prices-l__input">
+                    <span class="labeled-input__text">
+                        показувати лише дешевші за
+                    </span>
+                    <span class="labeled-input__subbox">
+                        <input type="number" min="0" max="250" class="labeled-input__input LOGIC-max-price-filter-input">
+                        <span class="labeled-input__text">
+                            грн / кг
+                        </span>
+                    </span>
+                </label>
+                <button class="another-prices-l__switch big-switch LOGIC-price-switch">
+                    <!--  big-switch--mode-down-->
+                    <span class="big-switch__arrow big-switch__arrow--up"></span>
+                    <span class="big-switch__arrow big-switch__arrow--down"></span>
+                    <span class="big-switch__text big-switch__text--up">Спершу дешевші</span>
+                    <span class="big-switch__text big-switch__text--down">Спершу дорожчі</span>
+                </button>
+            </div>
+        </div>
+
+        <section class="another-prices-l__middle-block LOGIC-products-container">
+        </section>
+    </article>
+    <!-- /.another-prices-l -->
+
+    <article class="chart restrictor">
+        <canvas id="myChart"></canvas>
+    </article>
+    <script defer src="third-party/chart.js@2.8.0.js"></script>
+
+    <footer class="footer restrictor">
+        <div class="footer__logo-box">
+            <div class="footer__logo"></div>
+            <p class="footer__logo-text">
+                <span class="footer__logo-small-text">
+                    made by
+                </span>
+                <span class="footer__logo-big-text">
+                    Wizards
+                </span>
+            </p>
+        </div>
+
+        <p class="footer__year">2020</p>
+
+        <div class="footer__contributors contributors">
+            <p class="contributors__title">
+                Contributors
+            </p>
+            <ul class="contributors__container">
+                <li class="contributors__contributor-wrapper">
+                    <a href="https://andrii256.github.io/info/" class="contributors__contributor" target="_blank">
+                        <img
+                            src="images/contributors/contributor-1.jpg"
+                            alt="Andrii Hrushetskyi"
+                            title="Andrii Hrushetkyi" 
+                            class="contributors__image"
+                        >
+                    </a>
+                </li>
+                <li class="contributors__contributor-wrapper">
+                    <a href="https://www.facebook.com/profile.php?id=100021124484979" class="contributors__contributor" target="_blank">
+                        <img
+                            src="images/contributors/contributor-3.jpg"
+                            alt="Eugene Medyanik"
+                            title="Eugene Medyanik"
+                            class="contributors__image"
+                        >
+                    </a>
+                </li>
+                <li class="contributors__contributor-wrapper">
+                    <a href="https://instagram.com/fraer123ter?igshid=1dj7mk2c7lqkk" class="contributors__contributor" target="_blank">
+                        <img
+                            src="images/contributors/contributor-2.jpg"
+                            alt="Anton Mokryi"
+                            title="Anton Mokryi"
+                            class="contributors__image"
+                        >
+                    </a>
+                </li>
+                <li class="contributors__contributor-wrapper">
+                    <a href="https://www.instagram.com/vladinyo/" class="contributors__contributor" target="_blank">
+                        <img
+                            src="images/contributors/contributor-4.jpg"
+                            alt="Vlad Berezovskiy"
+                            title="Vlad Berezovskiy"
+                            class="contributors__image"
+                        >
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-- /.footer -->
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="third-party/redux.min.js"></script>
+</body>
+
+</html>

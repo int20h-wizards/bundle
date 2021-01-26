@@ -1,0 +1,107 @@
+.another-prices-l {
+	--another-prices-l-background: #999;
+	--another-prices-l-color: #511D0F;
+
+	padding: 60px 50px 100px;
+	background: var(--another-prices-l-background);
+
+	@media (max-width: $first-breackpoint) {
+		padding: 30px 15px 15px;
+	}
+	
+	&__top-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 52px;
+
+		@media (max-width: $second-breackpoint) {
+			display: block;
+		}
+	}
+
+	&__title {
+		color: var(--another-prices-l-color);
+		@media (max-width: $second-breackpoint) {
+			margin-bottom: 15px;
+		}
+	}
+	
+	&__filters {
+		display: flex;
+		@media (max-width: $third-breackpoint) {
+			display: block;
+		}
+	}
+
+	&__input {
+		@media (max-width: $third-breackpoint) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__switch {
+		margin-left: 14px;
+		@media (max-width: $third-breackpoint) {
+			margin: 10px 0;
+			width: 100%;
+		}
+	}
+
+	&__sorry-block {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-size: 22px;
+		color: #333;
+		text-align: center;
+	}
+	&__sad-emoji {
+		font-size: 50px;
+		margin-bottom: 10px;
+	}
+
+	&__cards-box {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		gap: 35px 15px;
+		justify-content: space-between;
+		margin-bottom: 70px;
+
+		@media (max-width: 1200px) {
+			grid-template-columns: repeat(4, 1fr);
+		}
+		@media (max-width: 900px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		@media (max-width: 670px) {
+			grid-template-columns: repeat(2, 1fr);
+			row-gap: 20px;
+		}
+		@media (max-width: $media-mobile) {
+			grid-template-columns: repeat(1, 1fr);
+			row-gap: 15px;
+		}
+	}
+}
+
+.body--buckwheat .another-prices-l {
+	--another-prices-l-background: linear-gradient(281.03deg, rgba(235, 133, 101, 0.84) 2.51%, rgba(235, 197, 101, 0.64) 94.7%);
+}
+
+.body--wheat .another-prices-l {
+	--another-prices-l-background: linear-gradient(281.03deg, rgba(172, 109, 15, 0.63) 2.51%, rgba(235, 197, 101, 0.64) 48.6%);
+}
+
+.body--rice .another-prices-l {
+	--another-prices-l-background: linear-gradient(281.03deg, #EEE9BB 13.07%, rgba(235, 197, 101, 0.87) 53.88%);
+}
+
+.body--corn .another-prices-l {
+	--another-prices-l-background: linear-gradient(281.03deg, rgba(255, 219, 91, 0.77) 10.48%, rgba(255, 214, 0, 0.68) 72.13%);
+}
+
+.body--barley .another-prices-l {
+	--another-prices-l-background: linear-gradient(284.81deg, rgba(203, 67, 8, 0.29) 0%, rgba(131, 96, 44, 0.67) 66.84%);
+}

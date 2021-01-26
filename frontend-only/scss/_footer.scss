@@ -1,0 +1,65 @@
+.footer {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px 0 25px;
+	color: #333;
+	background: #FFEFCF;
+
+	@media (max-width: $first-breackpoint) {
+		flex-direction: column;
+		align-items: center;
+		padding: 0 15px;
+	}
+
+	&__logo-box {
+		display: flex;
+		align-items: center;
+		margin-top: 38px;
+		@media (max-width: $first-breackpoint) {
+			order: 3;
+			align-self: flex-start;
+			margin-top: 0;
+		}
+	}
+	&__logo {
+		height: 108px;
+		width: 108px;
+		flex-shrink: 0;
+		margin-right: 13px;
+		background: url(../images/footer/logo.svg) center no-repeat;
+		box-sizing: contain;
+	}
+
+	&__logo-text {
+		font-weight: 200;
+	}
+
+	&__logo-small-text {
+		display: block;
+		font-size: 18px;
+	}
+	&__logo-big-text {
+		font-size: 40px;
+	}
+
+	&__year {
+		align-self: flex-end;
+		margin-bottom: 13px;
+		font-size: 18px;
+		font-weight: 200;
+		@media (max-width: $first-breackpoint) {
+			order: 2;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	&__contributors {
+		@media (max-width: $first-breackpoint) {
+			align-self: flex-end;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+	}
+}

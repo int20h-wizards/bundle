@@ -1,0 +1,32 @@
+{
+  "name": "int-20-wizards_experiment_with_css_based_logic",
+  "version": "0.9.0",
+  "description": "installing redux, live server and may be scss compiler and images compressonr. But I'm not sure",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "see-result": "npm run "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/int20h-wizards/frontend-only.git"
+  },
+  "keywords": [
+    "css-experiments",
+    "int20",
+    "int20-wizards",
+    "wizards",
+    "redux",
+    "css-based-logic",
+    "hackathon"
+  ],
+  "author": "Andrii Hrushetskyii (@andrii256)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/int20h-wizards/frontend-only/issues"
+  },
+  "homepage": "https://github.com/int20h-wizards/frontend-only#readme",
+  "dependencies": {
+    "redux": "^4.0.5"
+  }
+}

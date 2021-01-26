@@ -1,0 +1,50 @@
+.big-switch {
+	--big-switch-color: #6A303B;
+
+	position: relative;
+	padding: $big-switch-vertical-padding $big-switch-side-padding $big-switch-vertical-padding $big-switch-arrows-width + $big-switch-side-padding;
+	color: var(--big-switch-color);
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	background: rgba(254, 254, 254, 0.13);
+	border-radius: 15px;
+	border-color: transparent;
+	@include clickable-element;
+
+	&__text {
+		display: none;
+	}
+	&--mode-up &__text--up,
+	&--mode-down &__text--down {
+		display: inline-block;
+	}
+
+	&__arrow {
+		position: absolute;
+		left: $big-switch-side-padding - ($big-switch-arrow-width / 2);
+		width: 0;
+		height: 0;
+		border-style: solid;
+
+		&--up {
+			top: $big-switch-vertical-padding;
+			border-width: 0 6px 9px 6px;
+			border-color: transparent transparent rgba(92, 92, 92, 0.3) transparent;
+		}
+		&--down {
+			bottom: $big-switch-vertical-padding;
+			border-width: 9px 6px 0 6px;
+			border-color: rgba(92, 92, 92, 0.3) transparent transparent transparent;
+		}
+	}
+
+	&--mode-up &__arrow--up {
+		border-color: transparent transparent var(--big-switch-color) transparent;
+	}
+	&--mode-down &__arrow--down {
+		border-color: var(--big-switch-color) transparent transparent transparent;
+	}
+
+}

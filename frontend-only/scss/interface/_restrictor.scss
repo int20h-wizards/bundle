@@ -1,0 +1,13 @@
+.restrictor {
+	@media (min-width: 1443px) {
+		padding-left: calc((100vw - 1440px) / 2) !important;
+		padding-right: calc((100vw - 1440px) / 2) !important;
+	}
+	
+	&1200 {
+		@media (min-width: 1230px) {
+			padding-left: calc((100vw - 1200px) / 2) !important;
+			padding-right: calc((100vw - 1200px) / 2) !important;
+		}
+	}
+}

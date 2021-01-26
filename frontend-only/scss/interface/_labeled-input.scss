@@ -1,0 +1,43 @@
+.labeled-input {
+	--labeled-input-color: #6A303B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px 12px;
+	background: rgba(254, 254, 254, 0.13);
+	border-radius: 15px;
+	cursor: pointer;
+
+	&__text {
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 17px;
+		color: var(--labeled-input-color);
+	}
+
+	&__input {
+		display: inline-block;
+		margin: 0 6px;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 21px;
+		padding: 5px 0px 5px 12px;
+		text-align: center;
+		color: #333333;
+		background: rgba(255, 255, 255, 0.9);
+		border-radius: 5px;
+		border-color: transparent;
+		transition-duration: 0.3s;
+	}
+
+	&__subbox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&:hover &__input,
+	&__input:hover {
+		border-color: yellow;
+	}
+}

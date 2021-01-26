@@ -1,0 +1,28 @@
+@import './typography/fonts';
+@import './reset-normalize';
+@import './support/variables';
+@import './support/mixins';
+
+// typography
+@import './typography/textChapterTitle';
+
+// interface
+@import './interface/button-transparent';
+@import './interface/filled-button';
+@import './interface/labeled-input';
+@import './interface/big-switch';
+
+// blocks
+@import './body';
+
+@import './main-screen-l';
+@import './central';
+@import './navigation';
+@import './another-prices-l';
+@import './product-card';
+@import './footer';
+@import './contributors';
+@import './chart';
+
+// restrictor on the superwide screens
+@import './interface/restrictor';

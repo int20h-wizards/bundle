@@ -1,0 +1,8 @@
+@mixin clickable-element {
+	transform: scale(0.999);
+	cursor: pointer;
+	user-select: none;
+	&:active {
+		transform: scale(0.96);
+	}
+}

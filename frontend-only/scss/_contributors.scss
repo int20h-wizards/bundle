@@ -1,0 +1,44 @@
+.contributors {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	&__title {
+		margin-bottom: 10px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__container {
+		display: flex;
+	}
+
+	&__contributor-wrapper {
+		height: 55px;
+		width: 55px;
+		flex-shrink: 0;
+		margin-right: 8px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__contributor {
+		display: block;
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+		box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.48);
+		@include clickable-element;
+		transition-duration: 0.3s;
+	}
+
+	&__image {
+		display: block;
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+		border-radius: 50%;
+	}
+}
